@@ -2,29 +2,42 @@
 @model LandingPageModel
 @{
 
-        }
+}
+<style>
+    movie-list {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+</style>
+
  <div>
     <form>
-        <h3>Category</h3>
+        <h3 width>Category</h3>
+        <div class="movie-list">
         <div class=" movie_in_list">
-            <img src="" />
+                <img src="@Model.Movies[0].ImageUrl" />
+                <img src="c:\users\hfgf\source\repos\webapplication1\webapplication1\images\avatar.jpg" />
+                <img src="/Images/avatar.jpg"/>
             <input type="submit" />
         </div>
         <div class=" movie_in_list">
-            <img src="" />
+                <img src="@Model.Movies[1].ImageUrl" />
+
             <input type="submit" />
         </div>
         <div class=" movie_in_list">
-            <img src="" />
+                <img src="@Model.Movies[2].ImageUrl" />
+
             <input type="submit" />
         </div>
         <div class=" movie_in_list">
-            <img src="" />
-            <input type="submit" />
+                <img src="@Model.Movies[3].ImageUrl" />
+                <input type="submit" />
         </div>
         <div class=" movie_in_list">
-            <img src="" />
-            <input type="submit" />
+                <img src="@Model.Movies[4].ImageUrl" />
+                <input type="submit" />
+        </div>
         </div>
     </form>
 </div>
