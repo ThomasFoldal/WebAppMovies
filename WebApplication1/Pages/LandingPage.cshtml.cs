@@ -10,7 +10,7 @@ namespace WebApplication1.Pages
         public List<Movie> Movies {  get; set; }
         public void OnGet()
         {
-            Movies = new List<Movie>() { new Movie { Id = 0, ImageUrl = ""}, new Movie { Id = 1, ImageUrl = "Avatar-The-Way-of-Water.jpg" }, new Movie { Id = 2, ImageUrl = "" }, new Movie { Id = 3, ImageUrl = "" }, new Movie { Id = 4, ImageUrl = "" } };
+            Movies = new List<Movie>() { new Movie { Id = 0, ImageUrl = "/Images/avatar.jpg" }, new Movie { Id = 1, ImageUrl = "/Images/avatar.jpg" }, new Movie { Id = 2, ImageUrl = "" }, new Movie { Id = 3, ImageUrl = "" }, new Movie { Id = 4, ImageUrl = "" } };
         }
     }
 }

@@ -4,39 +4,114 @@
 
 }
 <style>
-    movie-list {
+    .movie-list {
         display: grid;
-        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr))/* ( 5, 1fr) */;
+        gap: 5px;
+        min-height:100px;
+    }
+    .movie-in-list {
+        width:100%;
+        max-height:max-content;
+        background-color: rgba(0,0,0,.25);
+        box-shadow: rgba(0,0,0,.25);
+        display:grid;
+        grid-template-columns: fr1;
+        grid-template-rows: fr1;
+    }
+
+    .movie-button {
+        height:100%;
+        background-color: transparent;
+        border-color: transparent;
+        z-index:1;
+    }
+    .movie-thumbnail, .movie-button {
+        grid-area: 1 / 1;
+        width: 100%;
+    }
+    #test {
+
     }
 </style>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
  <div>
     <form>
-        <h3 width>Category</h3>
+        <h3 >Category</h3>
         <div class="movie-list">
-        <div class=" movie_in_list">
-                <img src="@Model.Movies[0].ImageUrl" />
-                <img src="/Images/avatar.jpg"/>
-            <input type="submit" />
+            <div class="movie-in-list">
+                <img class="movie-thumbnail" src="@Model.Movies[0].ImageUrl" style="width:100%" />
+            <input class="movie-button" type="submit" value=""/>
+            </div>
+            <div class="movie-in-list">
+                <img class="movie-thumbnail" src="@Model.Movies[1].ImageUrl" style="width:100%" />
+            <input class="movie-button" type="submit" value=""/>
         </div>
-        <div class=" movie_in_list">
-                <img src="@Model.Movies[1].ImageUrl" />
-
-            <input type="submit" />
+            <div class="movie-in-list">
+                <img class="movie-thumbnail" src="@Model.Movies[2].ImageUrl" style="width:100%" />
+            <input class="movie-button" type="submit" value=""/>
         </div>
-        <div class=" movie_in_list">
-                <img src="@Model.Movies[2].ImageUrl" />
-
-            <input type="submit" />
+            <div class="movie-in-list">
+                <img class="movie-thumbnail" src="@Model.Movies[3].ImageUrl" style="width:100%" />
+            <input class="movie-button" type="submit" value=""/>
         </div>
-        <div class=" movie_in_list">
-                <img src="@Model.Movies[3].ImageUrl" />
-                <input type="submit" />
-        </div>
-        <div class=" movie_in_list">
-                <img src="@Model.Movies[4].ImageUrl" />
-                <input type="submit" />
+            <div class="movie-in-list">
+                <img class="movie-thumbnail" src="@Model.Movies[4].ImageUrl" style="width:100%" />
+            <input class="movie-button" type="submit" value=""/>
         </div>
         </div>
     </form>
+    <form>
+        <h3 >Horror</h3>
+        <div class="movie-list">
+            <div class="movie-in-list">
+                <img class="movie-thumbnail" src="@Model.Movies[0].ImageUrl" style="width:100%" />
+                <input class="movie-button" type="submit" value="" />
+            </div>
+            <div class="movie-in-list">
+                <img class="movie-thumbnail" src="@Model.Movies[1].ImageUrl" style="width:100%" />
+                <input class="movie-button" type="submit" value="" />
+            </div>
+            <div class="movie-in-list">
+                <img class="movie-thumbnail" src="@Model.Movies[2].ImageUrl" style="width:100%" />
+                <input class="movie-button" type="submit" value="" />
+            </div>
+            <div class="movie-in-list">
+                <img class="movie-thumbnail" src="@Model.Movies[3].ImageUrl" style="width:100%" />
+                <input class="movie-button" type="submit" value="" />
+            </div>
+            <div class="movie-in-list">
+                <img class="movie-thumbnail" src="@Model.Movies[4].ImageUrl" style="width:100%" />
+                <input class="movie-button" type="submit" value="" />
+            </div>
+        </div>
+    </form>
+    <form>
+        <h3 >Action</h3>
+        <div class="movie-list">
+            <div class="movie-in-list">
+                <img class="movie-thumbnail" src="@Model.Movies[0].ImageUrl" style="width:100%" />
+                <input class="movie-button" type="submit" value="" />
+            </div>
+            <div class="movie-in-list">
+                <img class="movie-thumbnail" src="@Model.Movies[1].ImageUrl" style="width:100%" />
+                <input class="movie-button" type="submit" value="" />
+            </div>
+            <div class="movie-in-list">
+                <img class="movie-thumbnail" src="@Model.Movies[2].ImageUrl" style="width:100%" />
+                <input class="movie-button" type="submit" value="" />
+            </div>
+            <div class="movie-in-list">
+                <img class="movie-thumbnail" src="@Model.Movies[3].ImageUrl" style="width:100%" />
+                <input class="movie-button" type="submit" value="" />
+            </div>
+            <div class="movie-in-list">
+                <img class="movie-thumbnail" src="@Model.Movies[4].ImageUrl" style="width:100%" />
+                <input class="movie-button" type="submit" value="" />
+            </div>
+        </div>
+    </form>
+
 </div>
