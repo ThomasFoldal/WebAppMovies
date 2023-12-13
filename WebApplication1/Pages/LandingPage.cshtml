@@ -37,81 +37,29 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <div>
-    <form>
-        <h3 >Category</h3>
-        <div class="movie-list">
-            <div class="movie-in-list">
-                <img class="movie-thumbnail" src="@Model.Movies[0].ImageUrl" style="width:100%" />
-            <input class="movie-button" type="submit" value=""/>
-            </div>
-            <div class="movie-in-list">
-                <img class="movie-thumbnail" src="@Model.Movies[1].ImageUrl" style="width:100%" />
-            <input class="movie-button" type="submit" value=""/>
+ <main>
+     <h3 >Category</h3>
+     <div class="movie-list">
+        <div class="movie-in-list">
+            <img class="movie-thumbnail" src="@Model.Movies[0].ImageUrl" style="width:100%" />
+            <button data-movie="@Model.Movies[0].Id" class="movie-button" type="submit" value="" asp-page="/DetailPage"/>
         </div>
-            <div class="movie-in-list">
-                <img class="movie-thumbnail" src="@Model.Movies[2].ImageUrl" style="width:100%" />
-            <input class="movie-button" type="submit" value=""/>
+        <div class="movie-in-list">
+            <img class="movie-thumbnail" src="@Model.Movies[1].ImageUrl" style="width:100%" />
+            <button data-movie="@Model.Movies[1].Id" class="movie-button" type="submit" value="" />
         </div>
-            <div class="movie-in-list">
-                <img class="movie-thumbnail" src="@Model.Movies[3].ImageUrl" style="width:100%" />
-            <input class="movie-button" type="submit" value=""/>
+        <div class="movie-in-list">
+            <img class="movie-thumbnail" src="@Model.Movies[2].ImageUrl" style="width:100%" />
+            <button data-movie="@Model.Movies[2].Id" class="movie-button" type="submit" value="" />
         </div>
-            <div class="movie-in-list">
-                <img class="movie-thumbnail" src="@Model.Movies[4].ImageUrl" style="width:100%" />
-            <input class="movie-button" type="submit" value=""/>
+        <div class="movie-in-list">
+            <img class="movie-thumbnail" src="@Model.Movies[3].ImageUrl" style="width:100%" />
+            <button data-movie="@Model.Movies[3].Id" class="movie-button" type="submit" value="" />
         </div>
+        <div class="movie-in-list">
+            <img class="movie-thumbnail" src="@Model.Movies[4].ImageUrl" style="width:100%" />
+            <button data-movie="@Model.Movies[4].Id" class="movie-button" type="submit" value="" />
         </div>
-    </form>
-    <form>
-        <h3 >Horror</h3>
-        <div class="movie-list">
-            <div class="movie-in-list">
-                <img class="movie-thumbnail" src="@Model.Movies[0].ImageUrl" style="width:100%" />
-                <input class="movie-button" type="submit" value="" />
-            </div>
-            <div class="movie-in-list">
-                <img class="movie-thumbnail" src="@Model.Movies[1].ImageUrl" style="width:100%" />
-                <input class="movie-button" type="submit" value="" />
-            </div>
-            <div class="movie-in-list">
-                <img class="movie-thumbnail" src="@Model.Movies[2].ImageUrl" style="width:100%" />
-                <input class="movie-button" type="submit" value="" />
-            </div>
-            <div class="movie-in-list">
-                <img class="movie-thumbnail" src="@Model.Movies[3].ImageUrl" style="width:100%" />
-                <input class="movie-button" type="submit" value="" />
-            </div>
-            <div class="movie-in-list">
-                <img class="movie-thumbnail" src="@Model.Movies[4].ImageUrl" style="width:100%" />
-                <input class="movie-button" type="submit" value="" />
-            </div>
-        </div>
-    </form>
-    <form>
-        <h3 >Action</h3>
-        <div class="movie-list">
-            <div class="movie-in-list">
-                <img class="movie-thumbnail" src="@Model.Movies[0].ImageUrl" style="width:100%" />
-                <input class="movie-button" type="submit" value="" />
-            </div>
-            <div class="movie-in-list">
-                <img class="movie-thumbnail" src="@Model.Movies[1].ImageUrl" style="width:100%" />
-                <input class="movie-button" type="submit" value="" />
-            </div>
-            <div class="movie-in-list">
-                <img class="movie-thumbnail" src="@Model.Movies[2].ImageUrl" style="width:100%" />
-                <input class="movie-button" type="submit" value="" />
-            </div>
-            <div class="movie-in-list">
-                <img class="movie-thumbnail" src="@Model.Movies[3].ImageUrl" style="width:100%" />
-                <input class="movie-button" type="submit" value="" />
-            </div>
-            <div class="movie-in-list">
-                <img class="movie-thumbnail" src="@Model.Movies[4].ImageUrl" style="width:100%" />
-                <input class="movie-button" type="submit" value="" />
-            </div>
-        </div>
-    </form>
-
-</div>
+     </div>
+</main>
+<script src="~/js/LandingPageScript.js"/>
