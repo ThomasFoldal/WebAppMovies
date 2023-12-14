@@ -9,11 +9,12 @@
         grid-template-columns: repeat(auto-fit,minmax(200px, 1fr))/* ( 5, 1fr) */;
         gap: 5px;
         min-height:100px;
+        background-color: #2B4379;
+        padding:10px;
     }
     .movie-in-list {
         width:100%;
         max-height:max-content;
-        background-color: rgba(0,0,0,.25);
         box-shadow: rgba(0,0,0,.25);
         display:grid;
         grid-template-columns: fr1;
@@ -30,16 +31,23 @@
         grid-area: 1 / 1;
         width: 100%;
     }
-    #test {
-
+    h3 {
+        margin:0px;
+        padding:10px;
+    }
+    .incloses-category{
+        background-color: #172b61;
+        padding-left:5px;
     }
 </style>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
  <main>
-     <h3 >Category</h3>
-     <div class="movie-list">
+     <div class="incloses-category">
+         <h3 >Category</h3>
+     </div>
+    <div class="movie-list" style="background-color:#172b61">
         <div class="movie-in-list">
             <img class="movie-thumbnail" src="@Model.Movies[0].ImageUrl" style="width:100%" />
             <button data-movie="@Model.Movies[0].Id" class="movie-button" type="submit" value=""/>
