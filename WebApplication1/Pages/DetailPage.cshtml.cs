@@ -12,7 +12,7 @@ namespace WebApplication1.Pages
         }
         public void OnSingleOrder(Movie movie)
         {
-
+            Movie = movie;
         }
     }
 }
